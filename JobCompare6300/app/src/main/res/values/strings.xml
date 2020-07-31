@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JobCompare6300</string>
+    <string name="salary">Salary:</string>
+    <string name="leave_time">Leave Time:</string>
+    <string name="benefit">Benefit:</string>
+    <string name="yearly_bonus">Yearly Bonus:</string>
+    <string name="signing_bonus">Signing Bonus:</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="current_job">Current Job</string>
+
+</resources>
+

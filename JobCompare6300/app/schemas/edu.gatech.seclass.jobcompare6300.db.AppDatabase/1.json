@@ -1,0 +1,162 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "87c14e877f040b44ab70f3e579b6a4cb",
+    "entities": [
+      {
+        "tableName": "CurrentJob",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `company` TEXT, `location` TEXT, `cost_of_living_index` INTEGER NOT NULL, `salary` TEXT, `signing_bonus` TEXT, `yearly_bonus` TEXT, `retirement_benefits` REAL NOT NULL, `leave_time` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "company",
+            "columnName": "company",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "costOfLivingIndex",
+            "columnName": "cost_of_living_index",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salary",
+            "columnName": "salary",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "signingBonus",
+            "columnName": "signing_bonus",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "yearlyBonus",
+            "columnName": "yearly_bonus",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "retirementBenefits",
+            "columnName": "retirement_benefits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "leaveTime",
+            "columnName": "leave_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "JobOffer",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `company` TEXT, `location` TEXT, `cost_of_living_index` INTEGER NOT NULL, `salary` TEXT, `signing_bonus` TEXT, `yearly_bonus` TEXT, `retirement_benefits` REAL NOT NULL, `leave_time` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "company",
+            "columnName": "company",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "costOfLivingIndex",
+            "columnName": "cost_of_living_index",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salary",
+            "columnName": "salary",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "signingBonus",
+            "columnName": "signing_bonus",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "yearlyBonus",
+            "columnName": "yearly_bonus",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "retirementBenefits",
+            "columnName": "retirement_benefits",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "leaveTime",
+            "columnName": "leave_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '87c14e877f040b44ab70f3e579b6a4cb')"
+    ]
+  }
+}
