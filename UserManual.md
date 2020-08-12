@@ -1,7 +1,6 @@
 # Job Offer Comparison App User Manual
 |Application   |  Job Offer Comparison App |
 |---------------|----------------------------------|
-|Author | Len Jagielski(jagielski3@gatech.edu); Fengting Ji(fji8@gatech.edu); Xiandong Peng(xpeng49@gatech.edu); Tianxiang Xu(txu308@gatech.edu) |
 |Utility | JAVA, Android Studio  |
 |Release Date | 06/28/2020 |
 
